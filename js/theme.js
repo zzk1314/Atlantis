@@ -237,7 +237,8 @@ function courseSlider() {
       items: 3,
       dots: false,
       navContainer: '.seo-theme .client-slider .sldier-wrapper .slider-controller',
-      navClass: [ 'nav-pre', 'nav-next' ],
+      navClass: [ 'nav-pre btn_prev flex-prev', 'nav-next btn_next flex-next' ],
+      navText: [ '<i class="arr-left"/>', '<i class="arr-right"/>' ],
       autoplay: false,
       autoplayTimeout: 5000,
       autoplaySpeed: 1200,
@@ -276,10 +277,10 @@ function partnersLogo() {
           items: 2
         },
         700: {
-          items: 3
+          items: 2
         },
         992: {
-          items: 4
+          items: 2
         }
       }
     })
@@ -591,6 +592,7 @@ var navChange = (function ($) {
     $(_this).find("a").attr("class", "active");
     var contentTab = $(_this).find("a").attr('data-content')
     $('.nav-content').hide();
+    console.log(contentTab);
     $('#' + contentTab).show();
   }
 })(jQuery);
