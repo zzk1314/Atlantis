@@ -139,7 +139,7 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", "黑体", sans-serif !important;
     font-weight: normal;
     color: rgba(0, 0, 0, 0.6);
     font-size: 16px;
@@ -665,6 +665,7 @@ body .button-seven {
 .seo-theme .short-banner {
     padding: 40px 0;
     margin-bottom: 85px;
+    position: relative;
 }
 
 .seo-theme .short-banner h4 {
@@ -673,7 +674,22 @@ body .button-seven {
 }
 
 .seo-theme .short-banner .tips {
-    position: relative;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 240px;
+    height: auto;
+}
+
+.seo-theme .short-banner .tips img {
+    width: 100px;
+    display: inline-block;
+}
+
+.seo-theme .short-banner .tips .words {
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFF;
 }
 
 .seo-theme .short-banner a:hover + img {
@@ -681,11 +697,11 @@ body .button-seven {
 }
 
 .seo-theme .short-banner .qr-code {
-    position: absolute;
-    right: 0;
-    bottom: -50%;
-    display: none;
-    transform: translate(-50%, 100%);
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*bottom: -50%;*/
+    /*display: none;*/
+    /*transform: translate(-50%, 100%);*/
 }
 
 .seo-theme .short-banner a {
@@ -1157,6 +1173,7 @@ body .button-seven {
     background: url(../images/home/8.jpg) no-repeat center;
     background-size: cover;
     z-index: 1;
+    color: #FFF;
 }
 
 footer.seo-footer:before {
@@ -1207,7 +1224,7 @@ footer.seo-footer p {
 }
 
 .default-footer .top-footer .footer-left .link-container .item {
-    border-right: 1px solid #000;
+    border-right: 1px solid #FFF;
     padding-right: 10px;
     text-align: center;
 }
@@ -1218,6 +1235,10 @@ footer.seo-footer p {
 
 .default-footer .top-footer .footer-left .link-container .item + .item {
     padding-left: 10px;
+}
+
+.default-footer .top-footer .footer-left .link-container .item a {
+    color: #FFF;
 }
 
 .default-footer .top-footer .footer-right {
@@ -3174,7 +3195,9 @@ footer.seo-footer p {
 #business-apply {
     width: 300px;
     height: 300px;
-    background-color: #efefef;
+    background-color: white;
+    border: 1px solid #666;
+    border-radius: 5px 5px 0 0
 }
 
 #business-apply .qr-code {
@@ -3192,6 +3215,12 @@ footer.seo-footer p {
     position: absolute;
     top: 0;
     right: 0;
+    border: 1px solid #333;
+    border-radius: 30px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
 }
 
 .our-service .wrapper .single-service:hover {
@@ -3260,7 +3289,8 @@ body > div.main-page-wrapper > div.client-slider > div > div.sldier-wrapper > di
 
 /************* 文章 ************/
 .article-nav {
-    font-size: 20px;
+    font-size: 35px;
+    line-height: 35px;
     padding-top: 50px;
     padding-bottom: 30px;
 }
@@ -3268,13 +3298,13 @@ body > div.main-page-wrapper > div.client-slider > div > div.sldier-wrapper > di
 .article-nav .nav-item {
     display: inline-block;
     cursor: pointer;
-    font-weight:bolder;
-    color:#333;
+    font-weight: bolder;
+    color: #333;
 }
 
 .article-nav .nav-item a.active {
     border-bottom: 4px solid #666;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 .article-nav .nav-item + .nav-item {
@@ -3282,16 +3312,19 @@ body > div.main-page-wrapper > div.client-slider > div > div.sldier-wrapper > di
 }
 
 .container .content-item {
+    padding: 20px;
+}
 
-}
 .container .content-item .article + .article {
-    margin-top:40px;
+    margin-top: 40px;
 }
+
 .container .content-item .article {
-    height:200px;
+    height: 200px;
     overflow: hidden;
     position: relative;
 }
+
 .container .content-item .article .float-left {
     width: 350px;
     padding: 0 30px;
@@ -3302,29 +3335,30 @@ body > div.main-page-wrapper > div.client-slider > div > div.sldier-wrapper > di
 }
 
 .container .content-item .article .content .title {
-    font-size:26px;
-    color:#333;
+    font-size: 26px;
+    color: #333;
 }
+
 .container .content-item .article .article-info {
     position: absolute;
     bottom: 0;
-    left:350px;
+    left: 350px;
 }
+
 .container .content-item .article .content .prew-words {
-    font-size:18px;
-    color:#999;
+    font-size: 18px;
+    color: #999;
 }
 
 .container .content-item .article .content .prew-words .time {
-    font-size:18px;
+    font-size: 18px;
 }
 
 .container .content-item .article .content .prew-words .article-label {
     font-size: 20px;
-    font-weight:bolder;
-    color:#333;
+    font-weight: bolder;
+    color: #333;
 }
-
 
 /******************* 你负责努力，我们负责帮你赢 ******************/
 .you-work-win {
@@ -3405,12 +3439,16 @@ body > div.main-page-wrapper > div.client-slider > div > div.sldier-wrapper > di
 }
 
 #seo-main-banner > ul > li > div:nth-child(7) > div > div > div > a {
-    background: #ffc323;
-    color: #FFF;
+    /*background: #ffc323;*/
+    /*color: #FFF;*/
+    border: 2px solid #ffc323;
 }
 
 #seo-main-banner > ul > li > div:nth-child(7) > div > div > div > a:hover {
-    background: #3e60c2;
+    /*background: #3e60c2;*/
 }
 
+#seo-main-banner > ul > li > div:nth-child(6) > div > div > div > a {
+    border: 2px solid #ffc323;
+}
 
