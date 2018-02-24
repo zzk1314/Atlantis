@@ -274,13 +274,13 @@ function partnersLogo() {
       dragEndSpeed: 1000,
       responsive: {
         0: {
-          items: 2
+          items: 4
         },
         700: {
-          items: 2
+          items: 4
         },
         992: {
-          items: 2
+          items: 4
         }
       }
     })
